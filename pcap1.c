@@ -257,18 +257,18 @@ int main(int argc, char **argv)
 		/*mac adrress*/
 		if(strlen(ether_ntoa(&eth->sAddr))<=15){
 			fprintf(captured_fp,"%s\t\t", ether_ntoa(&eth->sAddr));
-			printf("srcMac:%d\n", strlen(ether_ntoa(&eth->sAddr)));
+			//printf("srcMac:%d\n", strlen(ether_ntoa(&eth->sAddr)));
 		} else{
 			fprintf(captured_fp,"%s\t", ether_ntoa(&eth->sAddr));
-			printf("srcMac:%d\n", strlen(ether_ntoa(&eth->sAddr)));
+			//printf("srcMac:%d\n", strlen(ether_ntoa(&eth->sAddr)));
 		}
 
 		if(strlen(ether_ntoa(&eth->dAddr))<=15){
 			fprintf(captured_fp,"%s\t\t", ether_ntoa(&eth->dAddr));
-			printf("dstMac:%d\n", strlen(ether_ntoa(&eth->sAddr)));
+			//printf("dstMac:%d\n", strlen(ether_ntoa(&eth->sAddr)));
 		} else{
 			fprintf(captured_fp,"%s\t", ether_ntoa(&eth->dAddr));
-			printf("dstMac:%d\n", strlen(ether_ntoa(&eth->sAddr)));
+			//printf("dstMac:%d\n", strlen(ether_ntoa(&eth->sAddr)));
 		}
 
 		//---------------------------------------------------------------------------------------//
